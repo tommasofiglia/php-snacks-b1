@@ -44,7 +44,21 @@ $matches = [
     'puntiospite' => rand(60, 120)
   ]
 ];
+?>
 
-var_dump($matches);
-
- ?>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p>
+      <?php
+      foreach ($matches as $match) {
+        echo $match['casa'] . ' - ' . $match['ospite'] . ' | ' . $match['punticasa'] . ' - ' . $match['puntiospite'] . '<br>';
+      }
+      ?>
+    </p>
+  </body>
+</html>
